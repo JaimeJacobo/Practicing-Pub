@@ -1,24 +1,54 @@
 doctype html
 html
   head
-    title Practicing Pug
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible" content="ie=edge")
+    link(href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet")
+    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
+    link(rel="stylesheet" href="wicked.css")
     link(rel="stylesheet" href="style.css")
+    title Jaime Jacobo - Personal Website
   body
-    h1#mainTitle Hello
-    p.firstParagraph.
-      Bubucela Jaime troglodita casimuerto
-      Tengo miedo tengo frio y tengo miedo
-      Los nogareda son guays
-    #mainDiv
-      input(type="password" name="inpPwd" data-js=`${1 > 2 ? "OK" : "NOT OK!"}`)
-    - const myClasses = ["class1", "class2", "class3"]
-    div.myDivClass(class=myClasses)
-    - const myStyles= {"color": "red", "background-color": "blue"}
-    div(style=myStyles)
+    #top.containerNav.slideDown
+      ul#navbarList
+        li#navbarContact
+          a(href="#media").scrolldown Media
+        li#navbarSkills
+          a(href="#technicalSkills").scrolldown Skills
+        li#navbarSocialMedia
+          a(href="#myProjects").scrolldown Projects
+        li#navbarMyProjects
+          a(href="#aboutMe").scrolldown About Me
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    //- h1#mainTitle Hello
+    //- p.firstParagraph.
+    //-   Bubucela Jaime troglodita casimuerto
+    //-   Tengo miedo tengo frio y tengo miedo
+    //-   Los nogareda son guayserqegere
+    //- #mainDiv
+    //-   input(type="password" name="inpPwd" data-js=`${1 > 2 ? "OK" : "NOT OK!"}`)
+    //- - const myClasses = ["class1", "class2", "class3"]
+    //- div.myDivClass(class=myClasses)
+    //- - const myStyles= {"color": "red", "background-color": "blue"}
+    //- div(style=myStyles)
    
 
-    - const myAttributes = {"src": "myPhoto.png", "alt": "This is my photo"}
-    img&attributes(myAttributes)
+    //- - const myAttributes = {"src": "myPhoto.png", "alt": "This is my photo"}
+    //- img&attributes(myAttributes)
 
-    input(type="text" disabled=true)
+    //- input(type="text" disabled=true)
  
